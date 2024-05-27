@@ -7,11 +7,6 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// const mongooseLink =
-//   "mongodb+srv://malekkbh:123456780@fixit.93ymalr.mongodb.net/test";
-
-// const mongooseLink =
-//   "mongodb+srv://malekkbh:123456780@fixit.93ymalr.mongodb.net/prod";
 
 const url = "mongodb+srv://malek:123456780@test.c38nkyc.mongodb.net/";
 
