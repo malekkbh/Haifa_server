@@ -1,5 +1,11 @@
 const { Schema, model } = require("mongoose");
 
+const ProductSchema = new Schema({
+  name: String,
+  price: Number,
+  color: String,
+});
+
 const UserSchema = new Schema({
   name: String,
   userID: {
@@ -15,13 +21,7 @@ const UserSchema = new Schema({
     default: [],
   },
   products: {
-    type: [
-      {
-        name: String,
-        price: Number,
-        color: String,
-      }, // product schema
-    ],
+    type: [ProductSchema],
     default: [],
   },
 });
