@@ -81,6 +81,5 @@ app.post("/getUserByID", async (req, res) => {
 
 // app.method('route' , (req , res)=> controller(req , res) )
 
-// app.use("/", Routs);
 
 module.exports = app;
